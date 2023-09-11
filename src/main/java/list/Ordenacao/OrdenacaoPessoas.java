@@ -34,7 +34,7 @@ public class OrdenacaoPessoas{
     ordenacaoPessoas.adicionarPessoa("Ana", 22, 1.54);
     ordenacaoPessoas.adicionarPessoa("Eliane", 65, 1.58);
 
-    System.out.println(ordenacaoPessoas.ordenarPorAltura());
+    System.out.println(ordenacaoPessoas.ordenarPorIdade());
 
   }
 }

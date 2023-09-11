@@ -13,7 +13,7 @@ public class Convidado{
     return nome;
   }
 
-  public int getConvite(){
+  public int getCodigoConvite(){
     return codigoConvite;
   }
 

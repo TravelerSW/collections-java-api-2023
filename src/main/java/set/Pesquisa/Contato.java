@@ -25,6 +25,11 @@ public class Contato{
     if(!(o instanceof Contato contato)) return false;
     return Objects.equals(getNome(), contato.getNome());
   }
+
+  @Override
+  public int hashCode(){
+    return Objects.hash(getNome());
+  }
   
   @Override
   public String toString(){

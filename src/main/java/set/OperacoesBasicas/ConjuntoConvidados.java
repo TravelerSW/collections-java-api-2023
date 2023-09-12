@@ -31,4 +31,19 @@ public class ConjuntoConvidados{
   public void exibirConvidados(){
     System.out.println(convidadoSet);
   }
+
+  public static void main(String[] args) {
+    ConjuntoConvidados conjuntoConvidados = new ConjuntoConvidados();
+    
+
+    conjuntoConvidados.adicionarConvidado("Kevin", 123);
+    conjuntoConvidados.adicionarConvidado("Ana", 121);
+    conjuntoConvidados.adicionarConvidado("Kevin", 124);
+    System.out.println("Existem : " +conjuntoConvidados.contarConvidados() + " convidados");
+
+    conjuntoConvidados.removerConvidadoPorCodigoConvite(123);
+    System.out.println("Existem : " +conjuntoConvidados.contarConvidados() + " convidados");
+
+    conjuntoConvidados.exibirConvidados();
+  }
 }

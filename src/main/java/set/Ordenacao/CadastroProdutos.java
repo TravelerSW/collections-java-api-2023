@@ -26,6 +26,10 @@ public class CadastroProdutos {
         produtoSet.addAll(produtoSet);
         return produtosPorPreco;
 
+
     }
+
+    // Exibindo todos os produtos no cadastro
+    
 
 }

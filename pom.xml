@@ -20,6 +20,14 @@
             </configuration>
         </plugin>
     </plugins>
+
+     <sourceDirectory>src/main/java</sourceDirectory>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+        </resource>
+    </resources>
+    
 </build>
 <!-- Adicione aqui as dependências e plugins do Maven -->
     

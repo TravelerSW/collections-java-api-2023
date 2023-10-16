@@ -13,7 +13,7 @@ public class Produto implements Comparable<Produto>{
 
     private int quantidade;
 
-    public produto(long codigo, String nome, double preco, int quantidade){
+    public Produto(long codigo, String nome, double preco, int quantidade){
         this.codigo = codigo;
 
         this.nome = nome;
@@ -58,9 +58,8 @@ public class Produto implements Comparable<Produto>{
     }
 
     @Override
-    public int compareTo(Produto o) {
-        // TODO Auto-generated method stub
-        return 0;
+    public int compareTo(Produto p) {
+        return nome.compareToIgnoreCase(p.getNome());
     }
 
 }   

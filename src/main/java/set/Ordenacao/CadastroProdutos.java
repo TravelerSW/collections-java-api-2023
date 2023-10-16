@@ -8,7 +8,7 @@ public class CadastroProdutos {
     //atributos
     private Set<Produto>produtoSet;
 
-    public cadastroProdutos(){
+    public CadastroProdutos(){
         this.produtoSet = new HashSet<>();
     }
 
@@ -23,10 +23,14 @@ public class CadastroProdutos {
 
     public Set<Produto>exibirProdutosPorPreco(){
         Set<Produto>produtosPorPreco = new TreeSet<>(new ComparatorPorPreco());
-        produtoSet.addAll(produtoSet);
+        produtosPorPreco.addAll(produtoSet);
         return produtosPorPreco;
 
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Teste");
     }
 
     // Exibindo todos os produtos no cadastro
